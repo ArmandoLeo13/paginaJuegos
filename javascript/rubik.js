@@ -1,0 +1,1 @@
+let colors = ["azul", "verde", "blanco", "amarillo", "naranja", "rojo"]
