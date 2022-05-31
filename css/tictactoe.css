@@ -67,3 +67,16 @@ body{
     margin: 1rem;
     border: 1px solid white;
 }
+.x, .o{
+    font-family: 'arial';
+    font-size: 70px;
+    position: absolute;
+}
+   
+.x{
+     color: blue;
+}
+   
+.o{
+     color: red;
+}
