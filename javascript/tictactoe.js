@@ -48,9 +48,19 @@ function cambiarTurnos(uno, dos){
     uno.turno = true;
     dos.turno = false;
 }
+function turnos() {
+    if(jugador1.turno==true&&jugador2==false){
+        document.getElementById("j1").classList.remove("oculto");
+        document.getElementById("j2").classList.add("oculto");
+    }else if(jugador1.turno==false&&jugador2.turno==true){
+        document.getElementById("j2").classList.remove("oculto");
+        document.getElementById("j1").classList.add("oculto");
+    }
+}
 
 jugador1.turno = true;
 
+console.log(jugador1.turno+""+jugador2.turno);
 document.getElementsByClassName('grid')[0].addEventListener('click', (e)=> {
     if(e.target.id===espacio1.id&&espacio1.jugado===false){
         if(jugador1.turno){
@@ -111,15 +121,15 @@ document.getElementsByClassName('grid')[0].addEventListener('click', (e)=> {
             agregarX(e.target.id);
             let posicionJugada = tablero[1].indexOf(4);
             if(posicionJugada !== -1){
-                tablero[0][posicionJugada] = "x";
+                tablero[1][posicionJugada] = "x";
             }
             cambiarTurnos(jugador2, jugador1);
             espacio4.jugado = true;
         }else{
             agregarO(e.target.id);
-            let posicionJugada = tablero[0].indexOf(4);
+            let posicionJugada = tablero[1].indexOf(4);
             if(posicionJugada !== -1){
-                tablero[0][posicionJugada] = "o";
+                tablero[1][posicionJugada] = "o";
             }
             cambiarTurnos(jugador1, jugador2);
             espacio4.jugado = true;
@@ -129,7 +139,7 @@ document.getElementsByClassName('grid')[0].addEventListener('click', (e)=> {
             agregarX(e.target.id);
             let posicionJugada = tablero[1].indexOf(5);
             if(posicionJugada !== -1){
-                tablero[0][posicionJugada] = "x";
+                tablero[1][posicionJugada] = "x";
             }
             cambiarTurnos(jugador2, jugador1);
             espacio5.jugado = true;
@@ -137,7 +147,7 @@ document.getElementsByClassName('grid')[0].addEventListener('click', (e)=> {
             agregarO(e.target.id);
             let posicionJugada = tablero[1].indexOf(5);
             if(posicionJugada !== -1){
-                tablero[0][posicionJugada] = "o";
+                tablero[1][posicionJugada] = "o";
             }
             cambiarTurnos(jugador1, jugador2);
             espacio5.jugado = true;
@@ -147,7 +157,7 @@ document.getElementsByClassName('grid')[0].addEventListener('click', (e)=> {
             agregarX(e.target.id);
             let posicionJugada = tablero[1].indexOf(6);
             if(posicionJugada !== -1){
-                tablero[0][posicionJugada] = "x";
+                tablero[1][posicionJugada] = "x";
             }
             cambiarTurnos(jugador2, jugador1);
             espacio6.jugado = true;
@@ -155,7 +165,7 @@ document.getElementsByClassName('grid')[0].addEventListener('click', (e)=> {
             agregarO(e.target.id);
             let posicionJugada = tablero[1].indexOf(6);
             if(posicionJugada !== -1){
-                tablero[0][posicionJugada] = "o";
+                tablero[1][posicionJugada] = "o";
             }
             cambiarTurnos(jugador1, jugador2);
             espacio6.jugado = true;
@@ -165,7 +175,7 @@ document.getElementsByClassName('grid')[0].addEventListener('click', (e)=> {
             agregarX(e.target.id);
             let posicionJugada = tablero[2].indexOf(7);
             if(posicionJugada !== -1){
-                tablero[0][posicionJugada] = "x";
+                tablero[2][posicionJugada] = "x";
             }
             cambiarTurnos(jugador2, jugador1);
             espacio7.jugado = true;
@@ -173,7 +183,7 @@ document.getElementsByClassName('grid')[0].addEventListener('click', (e)=> {
             agregarO(e.target.id);
             let posicionJugada = tablero[2].indexOf(7);
             if(posicionJugada !== -1){
-                tablero[0][posicionJugada] = "o";
+                tablero[2][posicionJugada] = "o";
             }
             cambiarTurnos(jugador1, jugador2);
             espacio7.jugado = true;
@@ -183,7 +193,7 @@ document.getElementsByClassName('grid')[0].addEventListener('click', (e)=> {
             agregarX(e.target.id);
             let posicionJugada = tablero[2].indexOf(8);
             if(posicionJugada !== -1){
-                tablero[0][posicionJugada] = "x";
+                tablero[2][posicionJugada] = "x";
             }
             cambiarTurnos(jugador2, jugador1);
             espacio8.jugado = true;
@@ -191,7 +201,7 @@ document.getElementsByClassName('grid')[0].addEventListener('click', (e)=> {
             agregarO(e.target.id);
             let posicionJugada = tablero[2].indexOf(8);
             if(posicionJugada !== -1){
-                tablero[0][posicionJugada] = "o";
+                tablero[2][posicionJugada] = "o";
             }
             cambiarTurnos(jugador1, jugador2);
             espacio8.jugado = true;
@@ -201,7 +211,7 @@ document.getElementsByClassName('grid')[0].addEventListener('click', (e)=> {
             agregarX(e.target.id);
             let posicionJugada = tablero[2].indexOf(9);
             if(posicionJugada !== -1){
-                tablero[0][posicionJugada] = "x";
+                tablero[2][posicionJugada] = "x";
             }
             cambiarTurnos(jugador2, jugador1);
             espacio9.jugado = true;
@@ -209,10 +219,63 @@ document.getElementsByClassName('grid')[0].addEventListener('click', (e)=> {
             agregarO(e.target.id);
             let posicionJugada = tablero[2].indexOf(9);
             if(posicionJugada !== -1){
-                tablero[0][posicionJugada] = "o";
+                tablero[2][posicionJugada] = "o";
             }
             cambiarTurnos(jugador1, jugador2);
             espacio9.jugado = true;
         }
     }
+    for (let i = 0; i < tablero.length; i++) {
+        if(tablero[i][0]=="x"&&tablero[i][1]=="x"&&tablero[i][2]=="x"){
+            document.getElementById("p1").classList.remove("oculto");
+            document.getElementById("reset").classList.remove("oculto");
+        }else if(tablero[i][0]=="o"&&tablero[i][1]=="o"&&tablero[i][2]=="o"){
+            document.getElementById("p2").classList.remove("oculto");
+            document.getElementById("reset").classList.remove("oculto");
+        }
+    }
+    for (let i = 0; i < tablero.length; i++) {
+        if(tablero[0][i]=="x"&&tablero[1][i]=="x"&&tablero[2][i]=="x"){
+            document.getElementById("p1").classList.remove("oculto");
+            document.getElementById("reset").classList.remove("oculto");
+        }else if(tablero[0][i]=="o"&&tablero[1][i]=="o"&&tablero[2][i]=="o"){
+            document.getElementById("p2").classList.remove("oculto");
+            document.getElementById("reset").classList.remove("oculto");
+        }
+    }if(tablero[0][0]=="x"&&tablero[1][1]=="x"&&tablero[2][2]=="x"){
+        document.getElementById("p1").classList.remove("oculto");
+        document.getElementById("reset").classList.remove("oculto");
+    }else if(tablero[0][0]=="o"&&tablero[1][1]=="o"&&tablero[2][2]=="o"){
+        document.getElementById("p2").classList.remove("oculto");
+        document.getElementById("reset").classList.remove("oculto");
+    }else if(tablero[0][2]=="x"&&tablero[1][1]=="x"&&tablero[2][0]=="x"){
+        document.getElementById("p1").classList.remove("oculto");
+        document.getElementById("reset").classList.remove("oculto");
+    }else if(tablero[0][2]=="o"&&tablero[1][1]=="o"&&tablero[2][0]=="o"){
+        document.getElementById("p2").classList.remove("oculto");
+        document.getElementById("reset").classList.remove("oculto");
+    }else if((tablero[0][0] == 'x' || tablero[0][0] == 'o') && (tablero[0][1] == 'x'
+    || tablero[0][1] == 'o') && (tablero[0][2] == 'x' || tablero[0][2] == 'o') &&
+    (tablero[1][0] == 'x' || tablero[1][0] == 'o') && (tablero[1][1] == 'x' ||
+    tablero[1][1] == 'o') && (tablero[1][2] == 'x' || tablero[1][2] == 'o') &&
+    (tablero[2][0] == 'x' || tablero[2][0] == 'o') && (tablero[2][1] == 'x' ||
+    tablero[2][1] == 'o') && (tablero[2][2] == 'x' || tablero[2][2] == 'o')) {
+        document.getElementById("empate").classList.remove("oculto");
+        document.getElementById("reset").classList.remove("oculto");
+    }
+    
+
 });
+
+    
+// let btn = document.getElementById("reset");
+// btn.addEventListener('click',(e)=>{
+//     e.preventDefault;
+//     tablero = [
+//         [1,2,3],
+//         [4,5,6],
+//         [7,8,9]
+//     ];
+//     document.getElementsByClassName("grid").remove(document.getElementsByClassName("x"));
+// });
+
