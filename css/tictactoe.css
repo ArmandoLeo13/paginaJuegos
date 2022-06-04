@@ -54,9 +54,11 @@ body{
 }
 .p1{
     color: blue;
+    display: inline;
 }
 .p2{
     color: red;
+    display: inline;
 }
 .cajaReset{
     display: flex;

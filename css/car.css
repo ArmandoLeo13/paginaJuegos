@@ -2,13 +2,20 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+body{
+    overflow: hidden;
 }
 .juego{
-    background-image: url(../images/fondo.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-rows: 1fr;
 }
-.start{
+
+.pantalla{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,14 +33,131 @@
     border-radius: 2px;
     z-index: 2;
 }
-.toStart{
+.ClickParaEmpezar{
     cursor: pointer;
 }
 .areaJuego{
-    height: 100vh;
-    width: 470px;
-    margin: auto;
-    position: relative;
-    background-color: rgb(32, 32, 32);
+    background-image: url(../images/area.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     overflow: hidden;
+}
+
+.out1{
+    background-image: url(../images/out1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.out2{
+    background-image: url(../images/out2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.auto {
+    background-image: url(../images/auto.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 75px;
+    width: 50px;
+    position: absolute;
+    top: 520px;
+    left: 700px;
+    z-index: 1;
+}
+
+.oponentes {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 75px;
+    width: 50px;
+    position: absolute;
+    top: 520px;
+    z-index: 1;
+}
+.oponentesr {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 75px;
+    width: 50px;
+    position: absolute;
+    top: 520px;
+    z-index: 1;
+}
+
+.caminoVias1_1{
+    height: 100px;
+    width: 10px;
+    background-color: white;
+    position: relative;
+    margin-left: 100px;
+    display: inline-block;
+}
+.caminoVias1_2{
+    height: 100px;
+    width: 10px;
+    background-color: white;
+    position: relative;
+    margin-left: 200px;
+    display: inline-block;
+}
+.caminoVias2_1{
+    height: 100px;
+    width: 10px;
+    background-color: white;
+    position: relative;
+    margin-left: 210px;
+    display: inline-block;
+}
+.caminoVias2_2{
+    height: 100px;
+    width: 10px;
+    background-color: white;
+    position: relative;
+    margin-left: 160px;
+    display: inline-block;
+}
+.oculto{
+    display: none;
+}
+.puntuacion, .puntuacionAlta {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	text-align: center;
+	background-color: white;
+	width: 200px;
+	color: black;
+	line-height: 40px;
+	border-radius: 4px;
+    border: 2px solid black;
+	font-size: 1.2em;
+}
+.volver{
+    position: absolute;
+	top: 10px;
+	right: 20px;
+	text-align: center;
+	background-color: white;
+	width: 200px;
+	color: black;
+	line-height: 40px;
+	border-radius: 4px;
+	font-size: 1.2em;
+} 
+.volver:hover{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+.raya{
+    background-color: yellow;
+    height: 100%;
+    width: 15px;
+}
+.raya2{
+    background-color: yellow;
+    height: 100%;
+    width: 30px;
 }
