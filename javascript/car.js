@@ -31,13 +31,6 @@ function keyup(e) {
     keys[e.key] = false;
 }
 
-function colorRandom() {
-    function c() {
-        let hexa = Math.floor(Math.random() * 256).toString(16);
-        return ("0" + String(hexa)).substr(-2);
-    }
-    return "#" + c() + c() + c();
-}
 function empezar() {
     areaJuego.innerHTML = "";
     pantalla.classList.add('oculto');
