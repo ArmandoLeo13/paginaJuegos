@@ -44,8 +44,7 @@ const espacio7 = new espacio("siete");
 const espacio8 = new espacio("ocho");
 const espacio9 = new espacio("nueve");
 
-// let punto1;
-// let punto2;
+
 function cambiarTurnos(uno, dos){
     uno.turno = true;
     dos.turno = false;
