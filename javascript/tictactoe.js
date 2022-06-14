@@ -96,17 +96,13 @@ document.getElementsByClassName('grid')[0].addEventListener('click', (e) => {
                 if (jugador1.turno) {
                     agregarX(e.target.id);
                     let posicionJugada = tablero[0].indexOf(1);
-                    if (posicionJugada !== -1) {
-                        tablero[0][posicionJugada] = "x";
-                    }
+                    (posicionJugada !== -1) && (tablero[0][posicionJugada] = "x");
                     cambiarTurnos(jugador2, jugador1);
                     espacio1.jugado = true;
                 } else {
                     agregarO(e.target.id);
                     let posicionJugada = tablero[0].indexOf(1);
-                    if (posicionJugada !== -1) {
-                        tablero[0][posicionJugada] = "o";
-                    }
+                    (posicionJugada !== -1) && (tablero[0][posicionJugada] = "o");
                     cambiarTurnos(jugador1, jugador2);
                     espacio1.jugado = true;
                 }
@@ -114,17 +110,13 @@ document.getElementsByClassName('grid')[0].addEventListener('click', (e) => {
                 if (jugador1.turno) {
                     agregarX(e.target.id);
                     let posicionJugada = tablero[0].indexOf(2);
-                    if (posicionJugada !== -1) {
-                        tablero[0][posicionJugada] = "x";
-                    }
+                    (posicionJugada !== -1) && (tablero[0][posicionJugada] = "x");
                     cambiarTurnos(jugador2, jugador1);
                     espacio2.jugado = true;
                 } else {
                     agregarO(e.target.id);
                     let posicionJugada = tablero[0].indexOf(2);
-                    if (posicionJugada !== -1) {
-                        tablero[0][posicionJugada] = "o";
-                    }
+                    (posicionJugada !== -1) && (tablero[0][posicionJugada] = "o");
                     cambiarTurnos(jugador1, jugador2);
                     espacio2.jugado = true;
                 }
@@ -132,17 +124,13 @@ document.getElementsByClassName('grid')[0].addEventListener('click', (e) => {
                 if (jugador1.turno) {
                     agregarX(e.target.id);
                     let posicionJugada = tablero[0].indexOf(3);
-                    if (posicionJugada !== -1) {
-                        tablero[0][posicionJugada] = "x";
-                    }
+                    (posicionJugada !== -1) && (tablero[0][posicionJugada] = "x");
                     cambiarTurnos(jugador2, jugador1);
                     espacio3.jugado = true;
                 } else {
                     agregarO(e.target.id);
                     let posicionJugada = tablero[0].indexOf(3);
-                    if (posicionJugada !== -1) {
-                        tablero[0][posicionJugada] = "o";
-                    }
+                    (posicionJugada !== -1) && (tablero[0][posicionJugada] = "o");
                     cambiarTurnos(jugador1, jugador2);
                     espacio3.jugado = true;
                 }
@@ -150,17 +138,13 @@ document.getElementsByClassName('grid')[0].addEventListener('click', (e) => {
                 if (jugador1.turno) {
                     agregarX(e.target.id);
                     let posicionJugada = tablero[1].indexOf(4);
-                    if (posicionJugada !== -1) {
-                        tablero[1][posicionJugada] = "x";
-                    }
+                    (posicionJugada !== -1) && (tablero[1][posicionJugada] = "x");
                     cambiarTurnos(jugador2, jugador1);
                     espacio4.jugado = true;
                 } else {
                     agregarO(e.target.id);
                     let posicionJugada = tablero[1].indexOf(4);
-                    if (posicionJugada !== -1) {
-                        tablero[1][posicionJugada] = "o";
-                    }
+                    (posicionJugada !== -1) && (tablero[1][posicionJugada] = "o");
                     cambiarTurnos(jugador1, jugador2);
                     espacio4.jugado = true;
                 }
@@ -168,17 +152,13 @@ document.getElementsByClassName('grid')[0].addEventListener('click', (e) => {
                 if (jugador1.turno) {
                     agregarX(e.target.id);
                     let posicionJugada = tablero[1].indexOf(5);
-                    if (posicionJugada !== -1) {
-                        tablero[1][posicionJugada] = "x";
-                    }
+                    (posicionJugada !== -1) && (tablero[1][posicionJugada] = "x");
                     cambiarTurnos(jugador2, jugador1);
                     espacio5.jugado = true;
                 } else {
                     agregarO(e.target.id);
                     let posicionJugada = tablero[1].indexOf(5);
-                    if (posicionJugada !== -1) {
-                        tablero[1][posicionJugada] = "o";
-                    }
+                    (posicionJugada !== -1) && (tablero[1][posicionJugada] = "o");
                     cambiarTurnos(jugador1, jugador2);
                     espacio5.jugado = true;
                 }
@@ -186,17 +166,13 @@ document.getElementsByClassName('grid')[0].addEventListener('click', (e) => {
                 if (jugador1.turno) {
                     agregarX(e.target.id);
                     let posicionJugada = tablero[1].indexOf(6);
-                    if (posicionJugada !== -1) {
-                        tablero[1][posicionJugada] = "x";
-                    }
+                    (posicionJugada !== -1) && (tablero[1][posicionJugada] = "x");
                     cambiarTurnos(jugador2, jugador1);
                     espacio6.jugado = true;
                 } else {
                     agregarO(e.target.id);
                     let posicionJugada = tablero[1].indexOf(6);
-                    if (posicionJugada !== -1) {
-                        tablero[1][posicionJugada] = "o";
-                    }
+                    (posicionJugada !== -1) && (tablero[1][posicionJugada] = "o");
                     cambiarTurnos(jugador1, jugador2);
                     espacio6.jugado = true;
                 }
@@ -204,17 +180,13 @@ document.getElementsByClassName('grid')[0].addEventListener('click', (e) => {
                 if (jugador1.turno) {
                     agregarX(e.target.id);
                     let posicionJugada = tablero[2].indexOf(7);
-                    if (posicionJugada !== -1) {
-                        tablero[2][posicionJugada] = "x";
-                    }
+                    (posicionJugada !== -1) && (tablero[2][posicionJugada] = "x");
                     cambiarTurnos(jugador2, jugador1);
                     espacio7.jugado = true;
                 } else {
                     agregarO(e.target.id);
                     let posicionJugada = tablero[2].indexOf(7);
-                    if (posicionJugada !== -1) {
-                        tablero[2][posicionJugada] = "o";
-                    }
+                    (posicionJugada !== -1) && (tablero[2][posicionJugada] = "o");
                     cambiarTurnos(jugador1, jugador2);
                     espacio7.jugado = true;
                 }
@@ -222,17 +194,13 @@ document.getElementsByClassName('grid')[0].addEventListener('click', (e) => {
                 if (jugador1.turno) {
                     agregarX(e.target.id);
                     let posicionJugada = tablero[2].indexOf(8);
-                    if (posicionJugada !== -1) {
-                        tablero[2][posicionJugada] = "x";
-                    }
+                    (posicionJugada !== -1) && (tablero[2][posicionJugada] = "x");
                     cambiarTurnos(jugador2, jugador1);
                     espacio8.jugado = true;
                 } else {
                     agregarO(e.target.id);
                     let posicionJugada = tablero[2].indexOf(8);
-                    if (posicionJugada !== -1) {
-                        tablero[2][posicionJugada] = "o";
-                    }
+                    (posicionJugada !== -1) && (tablero[2][posicionJugada] = "o");
                     cambiarTurnos(jugador1, jugador2);
                     espacio8.jugado = true;
                 }
@@ -240,17 +208,13 @@ document.getElementsByClassName('grid')[0].addEventListener('click', (e) => {
                 if (jugador1.turno) {
                     agregarX(e.target.id);
                     let posicionJugada = tablero[2].indexOf(9);
-                    if (posicionJugada !== -1) {
-                        tablero[2][posicionJugada] = "x";
-                    }
+                    (posicionJugada !== -1) && (tablero[2][posicionJugada] = "x");
                     cambiarTurnos(jugador2, jugador1);
                     espacio9.jugado = true;
                 } else {
                     agregarO(e.target.id);
                     let posicionJugada = tablero[2].indexOf(9);
-                    if (posicionJugada !== -1) {
-                        tablero[2][posicionJugada] = "o";
-                    }
+                    (posicionJugada !== -1) && (tablero[2][posicionJugada] = "o");
                     cambiarTurnos(jugador1, jugador2);
                     espacio9.jugado = true;
                 }
