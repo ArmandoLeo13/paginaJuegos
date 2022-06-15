@@ -49,9 +49,7 @@ function cambiarTurnos(uno, dos){
     uno.turno = true;
     dos.turno = false;
 }
-let p1Gano = document.getElementById("p1");
-let p2Gano = document.getElementById("p2");
-let boton1 = document.getElementById("reset");
+
 if(localStorage.getItem("puntos1")===null){
     let punto1 = {valor: 0};
     let punto2 = {valor: 0};
@@ -69,22 +67,30 @@ function mostrarPuntacion() {
     document.getElementById("j2").innerHTML = punto2.valor;
 }
 function gano1() {
-    p1Gano.classList.remove("oculto");
-    boton1.classList.remove("oculto");
     jugador1.gano=true;
     parsearPuntuacion();
     punto1.valor++;
     localStorage.setItem("puntos1",JSON.stringify(punto1));
     mostrarPuntacion();
+    swal({
+        title: "Gano jugador 1!",
+        icon: "success"
+      }).then((value) => {
+        window.location='../pages/tictactoe.html';
+      });
 }
 function gano2() {
-    p2Gano.classList.remove("oculto");
-    boton1.classList.remove("oculto");
     jugador2.gano=true;
     parsearPuntuacion();
     punto2.valor++;
     localStorage.setItem("puntos2",JSON.stringify(punto2));
     mostrarPuntacion();
+    swal({
+        title: "Gano jugador 2!",
+        icon: "success"
+      }).then((value) => {
+        window.location='../pages/tictactoe.html';
+      });
 }
 parsearPuntuacion();
 mostrarPuntacion();
@@ -246,10 +252,13 @@ document.getElementsByClassName('grid')[0].addEventListener('click', (e) => {
                     tablero[0][1] == 'o') && (tablero[0][2] == 'x' || tablero[0][2] == 'o') &&
                 (tablero[1][0] == 'x' || tablero[1][0] == 'o') && (tablero[1][1] == 'x' ||
                     tablero[1][1] == 'o') && (tablero[1][2] == 'x' || tablero[1][2] == 'o') &&
-                (tablero[2][0] == 'x' || tablero[2][0] == 'o') && (tablero[2][1] == 'x' ||
-                    tablero[2][1] == 'o') && (tablero[2][2] == 'x' || tablero[2][2] == 'o')) {
-                document.getElementById("empate").classList.remove("oculto");
-                boton1.classList.remove("oculto");
+                (tablero[2][0] == 'x' || tablero[2][0] == 'o') && (tablero[2][1] == 'x' || tablero[2][1] == 'o') && (tablero[2][2] == 'x' || tablero[2][2] == 'o')) {
+                    swal({
+                        title: "Empate!",
+                        icon: "info"
+                        }).then((value) => {
+                        window.location='../pages/tictactoe.html';
+                        });
             }
         }
     }

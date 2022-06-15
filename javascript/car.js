@@ -6,6 +6,11 @@ const areaJuego2 = document.querySelector('.areaJuego2');
 const ClickParaEmpezar = document.querySelector('.ClickParaEmpezar');
 let opo = ["opo1.png","opo2.png","opo3.png","opo4.png"];
 let opor = ["opor1.png","opor2.png","opor3.png","opor4.png"];
+const volver = document.querySelector('.volver');
+
+volver.addEventListener('click', ()=>{
+    window.location='../index.html';
+});
 
 ClickParaEmpezar.addEventListener('click', empezar);
 document.addEventListener('keydown', keydown);
