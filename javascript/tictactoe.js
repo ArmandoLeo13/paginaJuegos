@@ -1,8 +1,9 @@
-let tablero = [
-    [1,2,3],
-    [4,5,6],
-    [7,8,9]
-];
+let tablero;
+fetch('../javascript/data.json')
+    .then(response => response.json())
+    .then(response => {
+        tablero = response.tablero;
+    });
 
 class Jugador{
     constructor(id){

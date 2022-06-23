@@ -4,9 +4,9 @@ const pantalla = document.querySelector('.pantalla');
 const areaJuego = document.querySelector('.areaJuego');
 const areaJuego2 = document.querySelector('.areaJuego2');
 const ClickParaEmpezar = document.querySelector('.ClickParaEmpezar');
-let opo = ["opo1.png","opo2.png","opo3.png","opo4.png"];
-let opor = ["opor1.png","opor2.png","opor3.png","opor4.png"];
 const volver = document.querySelector('.volver');
+let opo, jugador, keys, opor;
+
 
 volver.addEventListener('click', ()=>{
     window.location='../index.html';
@@ -16,17 +16,14 @@ ClickParaEmpezar.addEventListener('click', empezar);
 document.addEventListener('keydown', keydown);
 document.addEventListener('keyup', keyup);
 
-let keys = {
-	ArrowUp: false,
-	ArrowDown: false,
-	ArrowLeft: false,
-	ArrowRight: false,
-}
-let jugador = {
-    velocidad: 5,
-    puntuacion: 0,
-    puntuacionAlta: 0
-}
+fetch('../javascript/data.json')
+    .then(response => response.json())
+    .then(response => {
+        jugador = response.jugador;
+        keys = response.keys;
+        opo = response.opo;
+        opor = response.opor;
+    });
 
 function keydown(e) {
     keys[e.key] = true;

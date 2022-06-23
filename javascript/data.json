@@ -1,0 +1,16 @@
+{"keys":{
+	"ArrowUp": false,
+	"ArrowDown": false,
+	"ArrowLeft": false,
+	"ArrowRight": false
+},"jugador":{
+    "velocidad": 5,
+    "puntuacion": 0,
+    "puntuacionAlta": 0
+},"opo":["opo1.png","opo2.png","opo3.png","opo4.png"],
+"opor":["opor1.png","opor2.png","opor3.png","opor4.png"],
+"tablero":[
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]}
