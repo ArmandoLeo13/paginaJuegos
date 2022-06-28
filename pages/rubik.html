@@ -8,100 +8,230 @@
     <link rel="stylesheet" href="../css/rubik.css">
 </head>
 <body>
+    <header>
+        <button class="boton" id="volver">Volver</button>
+        <button class="boton" id="reset">Reiniciar</button>
+    </header>
     <div class="escena" id="escena">
         <div class="pivote centrado" id="pivote" style="transform: rotateX(-35deg) rotateY(-135deg);">
-            <div class="cubo" id="cubo">
-                <div class="pieza">
-                    <div class="elemento izq"></div>
-                    <div class="elemento dere"></div>
-                    <div class="elemento arriba"></div>
-                    <div class="elemento abajo"></div>
-                    <div class="elemento atras"></div>
-                    <div class="elemento frente"></div>
-                </div>
-                <div class="pieza">
-                    <div class="elemento izq"></div>
-                    <div class="elemento dere"></div>
-                    <div class="elemento arriba"></div>
-                    <div class="elemento abajo"></div>
-                    <div class="elemento atras"></div>
-                    <div class="elemento frente"></div>
-                </div>
-                <div class="pieza">
-                    <div class="elemento izq"></div>
-                    <div class="elemento dere"></div>
-                    <div class="elemento arriba"></div>
-                    <div class="elemento abajo"></div>
-                    <div class="elemento atras"></div>
-                    <div class="elemento frente"></div>
-                </div>
-                <div class="pieza">
-                    <div class="elemento izq"></div>
-                    <div class="elemento dere"></div>
-                    <div class="elemento arriba"></div>
-                    <div class="elemento abajo"></div>
-                    <div class="elemento atras"></div>
-                    <div class="elemento frente"></div>
-                </div>
-                <div class="pieza">
-                    <div class="elemento izq"></div>
-                    <div class="elemento dere"></div>
-                    <div class="elemento arriba"></div>
-                    <div class="elemento abajo"></div>
-                    <div class="elemento atras"></div>
-                    <div class="elemento frente"></div>
-                </div>
-                <div class="pieza">
-                    <div class="elemento izq"></div>
-                    <div class="elemento dere"></div>
-                    <div class="elemento arriba"></div>
-                    <div class="elemento abajo"></div>
-                    <div class="elemento atras"></div>
-                    <div class="elemento frente"></div>
-                </div>
-                <div class="pieza">
-                    <div class="elemento izq"></div>
-                    <div class="elemento dere"></div>
-                    <div class="elemento arriba"></div>
-                    <div class="elemento abajo"></div>
-                    <div class="elemento atras"></div>
-                    <div class="elemento frente"></div>
-                </div>
-                <div class="pieza">
-                    <div class="elemento izq"></div>
-                    <div class="elemento dere"></div>
-                    <div class="elemento arriba"></div>
-                    <div class="elemento abajo"></div>
-                    <div class="elemento atras"></div>
-                    <div class="elemento frente"></div>
-                </div>
-                <div class="pieza">
-                    <div class="elemento izq"></div>
-                    <div class="elemento dere"></div>
-                    <div class="elemento arriba"></div>
-                    <div class="elemento abajo"></div>
-                    <div class="elemento atras"></div>
-                    <div class="elemento frente"></div>
-                </div>
-                <div class="pieza">
-                    <div class="elemento izq"></div>
-                    <div class="elemento dere"></div>
-                    <div class="elemento arriba"></div>
-                    <div class="elemento abajo"></div>
-                    <div class="elemento atras"></div>
-                    <div class="elemento frente"></div>
-                </div>
-                <div class="pieza">
-                    <div class="elemento izq"></div>
-                    <div class="elemento dere"></div>
-                    <div class="elemento arriba"></div>
-                    <div class="elemento abajo"></div>
-                    <div class="elemento atras"></div>
-                    <div class="elemento frente"></div>
-                </div>
+          <div class="cubo" id="cubo">
+            <div class="pieza">
+              <div class="elemento izq"></div>
+              <div class="elemento dere"></div>
+              <div class="elemento arriba"></div>
+              <div class="elemento abajo"></div>
+              <div class="elemento atras"></div>
+              <div class="elemento frente"></div>
             </div>
+            <div class="pieza">
+              <div class="elemento izq"></div>
+              <div class="elemento dere"></div>
+              <div class="elemento arriba"></div>
+              <div class="elemento abajo"></div>
+              <div class="elemento atras"></div>
+              <div class="elemento frente"></div>
+            </div>
+            <div class="pieza">
+              <div class="elemento izq"></div>
+              <div class="elemento dere"></div>
+              <div class="elemento arriba"></div>
+              <div class="elemento abajo"></div>
+              <div class="elemento atras"></div>
+              <div class="elemento frente"></div>
+            </div>
+            <div class="pieza">
+              <div class="elemento izq"></div>
+              <div class="elemento dere"></div>
+              <div class="elemento arriba"></div>
+              <div class="elemento abajo"></div>
+              <div class="elemento atras"></div>
+              <div class="elemento frente"></div>
+            </div>
+            <div class="pieza">
+              <div class="elemento izq"></div>
+              <div class="elemento dere"></div>
+              <div class="elemento arriba"></div>
+              <div class="elemento abajo"></div>
+              <div class="elemento atras"></div>
+              <div class="elemento frente"></div>
+            </div>
+            <div class="pieza">
+              <div class="elemento izq"></div>
+              <div class="elemento dere"></div>
+              <div class="elemento arriba"></div>
+              <div class="elemento abajo"></div>
+              <div class="elemento atras"></div>
+              <div class="elemento frente"></div>
+            </div>
+            <div class="pieza">
+              <div class="elemento izq"></div>
+              <div class="elemento dere"></div>
+              <div class="elemento arriba"></div>
+              <div class="elemento abajo"></div>
+              <div class="elemento atras"></div>
+              <div class="elemento frente"></div>
+            </div>
+            <div class="pieza">
+              <div class="elemento izq"></div>
+              <div class="elemento dere"></div>
+              <div class="elemento arriba"></div>
+              <div class="elemento abajo"></div>
+              <div class="elemento atras"></div>
+              <div class="elemento frente"></div>
+            </div>
+            <div class="pieza">
+              <div class="elemento izq"></div>
+              <div class="elemento dere"></div>
+              <div class="elemento arriba"></div>
+              <div class="elemento abajo"></div>
+              <div class="elemento atras"></div>
+              <div class="elemento frente"></div>
+            </div>
+            <div class="pieza">
+              <div class="elemento izq"></div>
+              <div class="elemento dere"></div>
+              <div class="elemento arriba"></div>
+              <div class="elemento abajo"></div>
+              <div class="elemento atras"></div>
+              <div class="elemento frente"></div>
+            </div>
+            <div class="pieza">
+              <div class="elemento izq"></div>
+              <div class="elemento dere"></div>
+              <div class="elemento arriba"></div>
+              <div class="elemento abajo"></div>
+              <div class="elemento atras"></div>
+              <div class="elemento frente"></div>
+            </div>
+            <div class="pieza">
+              <div class="elemento izq"></div>
+              <div class="elemento dere"></div>
+              <div class="elemento arriba"></div>
+              <div class="elemento abajo"></div>
+              <div class="elemento atras"></div>
+              <div class="elemento frente"></div>
+            </div>
+            <div class="pieza">
+              <div class="elemento izq"></div>
+              <div class="elemento dere"></div>
+              <div class="elemento arriba"></div>
+              <div class="elemento abajo"></div>
+              <div class="elemento atras"></div>
+              <div class="elemento frente"></div>
+            </div>
+            <div class="pieza">
+              <div class="elemento izq"></div>
+              <div class="elemento dere"></div>
+              <div class="elemento arriba"></div>
+              <div class="elemento abajo"></div>
+              <div class="elemento atras"></div>
+              <div class="elemento frente"></div>
+            </div>
+            <div class="pieza">
+              <div class="elemento izq"></div>
+              <div class="elemento dere"></div>
+              <div class="elemento arriba"></div>
+              <div class="elemento abajo"></div>
+              <div class="elemento atras"></div>
+              <div class="elemento frente"></div>
+            </div>
+            <div class="pieza">
+              <div class="elemento izq"></div>
+              <div class="elemento dere"></div>
+              <div class="elemento arriba"></div>
+              <div class="elemento abajo"></div>
+              <div class="elemento atras"></div>
+              <div class="elemento frente"></div>
+            </div>
+            <div class="pieza">
+              <div class="elemento izq"></div>
+              <div class="elemento dere"></div>
+              <div class="elemento arriba"></div>
+              <div class="elemento abajo"></div>
+              <div class="elemento atras"></div>
+              <div class="elemento frente"></div>
+            </div>
+            <div class="pieza">
+              <div class="elemento izq"></div>
+              <div class="elemento dere"></div>
+              <div class="elemento arriba"></div>
+              <div class="elemento abajo"></div>
+              <div class="elemento atras"></div>
+              <div class="elemento frente"></div>
+            </div>
+            <div class="pieza">
+              <div class="elemento izq"></div>
+              <div class="elemento dere"></div>
+              <div class="elemento arriba"></div>
+              <div class="elemento abajo"></div>
+              <div class="elemento atras"></div>
+              <div class="elemento frente"></div>
+            </div>
+            <div class="pieza">
+              <div class="elemento izq"></div>
+              <div class="elemento dere"></div>
+              <div class="elemento arriba"></div>
+              <div class="elemento abajo"></div>
+              <div class="elemento atras"></div>
+              <div class="elemento frente"></div>
+            </div>
+            <div class="pieza">
+              <div class="elemento izq"></div>
+              <div class="elemento dere"></div>
+              <div class="elemento arriba"></div>
+              <div class="elemento abajo"></div>
+              <div class="elemento atras"></div>
+              <div class="elemento frente"></div>
+            </div>
+            <div class="pieza">
+              <div class="elemento izq"></div>
+              <div class="elemento dere"></div>
+              <div class="elemento arriba"></div>
+              <div class="elemento abajo"></div>
+              <div class="elemento atras"></div>
+              <div class="elemento frente"></div>
+            </div>
+            <div class="pieza">
+              <div class="elemento izq"></div>
+              <div class="elemento dere"></div>
+              <div class="elemento arriba"></div>
+              <div class="elemento abajo"></div>
+              <div class="elemento atras"></div>
+              <div class="elemento frente"></div>
+            </div>
+            <div class="pieza">
+              <div class="elemento izq"></div>
+              <div class="elemento dere"></div>
+              <div class="elemento arriba"></div>
+              <div class="elemento abajo"></div>
+              <div class="elemento atras"></div>
+              <div class="elemento frente"></div>
+            </div>
+            <div class="pieza">
+              <div class="elemento izq"></div>
+              <div class="elemento dere"></div>
+              <div class="elemento arriba"></div>
+              <div class="elemento abajo"></div>
+              <div class="elemento atras"></div>
+              <div class="elemento frente"></div>
+            </div>
+            <div class="pieza">
+              <div class="elemento izq"></div>
+              <div class="elemento dere"></div>
+              <div class="elemento arriba"></div>
+              <div class="elemento abajo"></div>
+              <div class="elemento atras"></div>
+              <div class="elemento frente"></div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
+      <div id="guia">
+        <div class="anchor" id="anchor3" style="transform: translateZ(3px) translateY(-33.33%) rotate(-270deg) translateY(66.67%)"></div>
+        <div class="anchor" id="anchor2" style="transform: translateZ(3px) translateY(-33.33%) rotate(-180deg) translateY(66.67%)"></div>
+        <div class="anchor" id="anchor1" style="transform: translateZ(3px) translateY(-33.33%) rotate(-90deg) translateY(66.67%)"></div>
+        <div class="anchor" id="anchor0" style="transform: translateZ(3px) translateY(-33.33%) rotate(0deg) translateY(66.67%)"></div>
+      </div>
     <script src="../javascript/rubik.js"></script>
 </body>
 </html>

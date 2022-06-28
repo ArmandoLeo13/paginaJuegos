@@ -268,4 +268,9 @@ document.getElementsByClassName('grid')[0].addEventListener('click', (e) => {
 let btn2 = document.getElementById("btn2");
 btn2.addEventListener('click',()=>{
     localStorage.clear();
+    window.location.reload();
 });
+
+document.getElementById("volver").addEventListener('click', ()=>{
+    window.location="../index.html";
+})
